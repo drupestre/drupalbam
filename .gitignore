@@ -1,0 +1,68 @@
+### Project specific
+# Drupal
+web/modules/contrib
+web/themes/contrib
+
+# Elasticsearch
+docker/elasticsearch/dumps/*
+# Dump mysql
+dump/*
+
+### Drupal template
+# gitignore template for Drupal 8 projects
+# earlier versions of Drupal are tracked in `community/PHP/`
+
+# Ignore configuration files that may contain sensitive information
+web/sites/*/settings.php
+web/sites/*/services.yml
+
+# Ignore paths that may contain user-generated content
+web/sites/*/files/
+web/sites/*/privates/
+web/sites/*/public
+web/sites/*/private
+web/sites/*/files-public
+web/sites/*/files-private
+
+# Ignore paths that may contain temporary files
+web/sites/*/translations
+web/sites/*/tmp
+web/sites/*/cache
+
+# Ignore drupal core (if not versioning drupal sources)
+web/core
+web/modules/README.txt
+web/profiles/README.txt
+web/sites/README.txt
+web/sites/example.sites.php
+web/sites/example.settings.local.php
+web/sites/development.services.yml
+web/themes/README.txt
+vendor
+web/.csslintrc
+web/.editorconfig
+web/.eslintignore
+web/.eslintrc.json
+web/.gitattributes
+web/.ht.router.php
+web/autoload.php
+web/composer.json
+web/composer.lock
+web/example.gitignore
+web/index.php
+web/LICENSE.txt
+web/README.txt
+web/robots.txt
+web/INSTALL.txt
+web/update.php
+web/web.config
+### ignore local database
+database
+
+### Mac files
+*.DS_STORE
+.vscode/
+
+### IDE local configuration
+.idea
+.history
