@@ -31,9 +31,14 @@ class Blindd8Controller extends ControllerBase
     $uuid_generator = \Drupal::service('uuid');
     $uuid = $uuid_generator->generate();
 
+    $blindd8ingservice = \Drupal::service('blindd8.blindd8ingservice');
+    $tagline = $blindd8ingservice->getTagline();
+
     // Send it forth!
     $output = array(
-      '#markup' => $this->t('Hey, @name, here\'s a unique ID for you: @uuid', array('@name' => $name, '@uuid' => $uuid)),
+      '#markup' =>
+        $this->t('Hey, @name, here\'s a unique ID for you: @uuid. @tagline',
+          array('@name' => $name, '@uuid' => $uuid, '@tagline' => $tagline)),
     );
     return $output;
   }
