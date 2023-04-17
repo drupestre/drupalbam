@@ -1,0 +1,7 @@
+name: drupalbam
+recipe: drupal9
+excludes:
+  - web/core
+  - web/profiles
+config:
+  webroot: web
