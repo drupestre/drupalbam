@@ -8,3 +8,5 @@ Pour trouver les services Drupal, rechercher :
 ```bash
 \Drupal::service(
 ```
+## Ajout du module custom blindd8
+### Création du controller.
