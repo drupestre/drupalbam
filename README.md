@@ -10,3 +10,4 @@ Pour trouver les services Drupal, rechercher :
 ```
 ## Ajout du module custom blindd8
 ### Création du controller.
+### Ajout de l'appel à un service dans le controller.
